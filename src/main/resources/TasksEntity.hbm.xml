@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.todoapp.model.TasksEntity" table="tasks" schema="public" catalog="TodoApp">
+        <composite-id mapped="true" class="com.example.todoapp.model.TasksEntityPK">
+            <key-property name="email">
+                <column name="email" sql-type="integer"/>
+            </key-property>
+            <key-property name="taskId">
+                <column name="task_id" sql-type="integer"/>
+            </key-property>
+        </composite-id>
+        <property name="priority">
+            <column name="priority" sql-type="integer"/>
+        </property>
+        <property name="taskName">
+            <column name="task_name" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>
