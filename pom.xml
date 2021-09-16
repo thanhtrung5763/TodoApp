@@ -52,8 +52,10 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>9</source>
-                    <target>9</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <fork>true</fork>
+                    <executable>/Users/thanhninh/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/bin/javac</executable>
                 </configuration>
             </plugin>
         </plugins>
