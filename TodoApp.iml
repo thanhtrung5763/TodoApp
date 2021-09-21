@@ -35,7 +35,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -47,6 +47,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="postgresql-42.2.22" level="project" />
+    <orderEntry type="library" name="Hibernate 5.4.11-5.4.11" level="project" />
+    <orderEntry type="library" name="hibernate-commons-annotations-5.0.4.Final" level="project" />
+    <orderEntry type="library" name="jakarta.servlet.jsp.jstl-2.0.0" level="project" />
+    <orderEntry type="library" name="jakarta.servlet.jsp.jstl-api-2.0.0" level="project" />
+    <orderEntry type="library" name="jsp-api-2.1" level="project" />
+    <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="servlet-api-6.0.36" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:8.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.6.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />
@@ -56,13 +64,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
-    <orderEntry type="library" name="postgresql-42.2.22" level="project" />
-    <orderEntry type="library" name="Hibernate 5.4.11-5.4.11" level="project" />
-    <orderEntry type="library" name="hibernate-commons-annotations-5.0.4.Final" level="project" />
-    <orderEntry type="library" name="jakarta.servlet.jsp.jstl-2.0.0" level="project" />
-    <orderEntry type="library" name="jakarta.servlet.jsp.jstl-api-2.0.0" level="project" />
-    <orderEntry type="library" name="jsp-api-2.1" level="project" />
-    <orderEntry type="library" name="jstl-1.2" level="project" />
-    <orderEntry type="library" name="servlet-api-6.0.36" level="project" />
   </component>
 </module>
