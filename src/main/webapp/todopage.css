@@ -19,6 +19,9 @@
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
+#logout {
+    display: inline-block;
+}
 .icon-search {
     height: 20px;
     width: 22px;
@@ -43,4 +46,7 @@
     line-height: 1.2em;
     color: #2eca7f;
     margin-bottom: 8px;
+}
+#logout {
+    display: inline-block;
 }
