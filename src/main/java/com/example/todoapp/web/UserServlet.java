@@ -53,7 +53,6 @@ public class UserServlet extends HttpServlet {
         dispatcher.forward(req, resp);
         HttpSession session = req.getSession(false);
         String action = req.getServletPath();
-        System.out.println(action);
         if(session != null) {
             if (action == "/logout") {
                 session.invalidate();

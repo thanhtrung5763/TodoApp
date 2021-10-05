@@ -40,7 +40,7 @@
             <input type="email" placeholder="Email" name="email"/>
             <input type="password" placeholder="Password" name="password"/>
             <button>Sign Up</button>
-            <small class="border-top mt-4 p-2 w-100">Created with <i class="bi bi-heart-fill icon-pink"></i> by Team Aslan</small>
+            <small class="border-top mt-4 p-2 w-100">Created with <i class="bi bi-heart-fill icon-pink"></i> by <a target="_blank" href="https://webaslan.herokuapp.com/">Team Aslan</a></small>
         </form>
     </div>
     <div class="form-container sign-in-container">
@@ -57,7 +57,7 @@
             <input type="password" placeholder="Password" name="password"/>
             <a href="#">Forgot your password?</a>
             <button class="mb-3" >Sign In</button>
-            <small class="border-top mt-4 p-2 w-100">Created with <i class="bi bi-heart-fill icon-pink"></i> by Team Aslan</small>
+            <small class="border-top mt-4 p-2 w-100">Created with <i class="bi bi-heart-fill icon-pink"></i> by <a target="_blank" href="https://webaslan.herokuapp.com/">Team Aslan</a></small>
         </form>
     </div>
     <div class="overlay-container">
@@ -78,7 +78,7 @@
 <footer>
     <p>
         Created with <i class="bi bi-heart-fill"></i> by
-        <a target="_blank" href="https://nameless-escarpment-70661.herokuapp.com/">Team Aslan</a>
+        <a target="_blank" href="https://webaslan.herokuapp.com/">Team Aslan</a>
 
     </p>
 </footer>

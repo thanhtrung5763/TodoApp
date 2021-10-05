@@ -53,12 +53,7 @@ public class ToDoServlet extends HttpServlet {
     private void showTask(HttpServletRequest req, HttpServletResponse resp)
             throws SQLException, IOException, ServletException {
         String email= (String)req.getSession().getAttribute("email");
-        System.out.println(email);
         List<TasksEntity> listTask = taskDAO.getAllTask(email);
-        for(TasksEntity task : listTask) {
-            System.out.println(task.getTaskName());
-            System.out.println(task.getPriority());
-        }
         req.setAttribute("listTask", listTask);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/ToDoApp.jsp");
         dispatcher.forward(req, resp);
