@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name="login", urlPatterns = {"", "/register"})
+@WebServlet(name="login", urlPatterns = {"", "/register", "/logout"})
 public class UserServlet extends HttpServlet {
 
     private UserDAO userDAO;
@@ -40,13 +40,29 @@ public class UserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        /*HttpSession session = req.getSession(false);
+        if (session != null) {
+            session.removeAttribute("error");
+        }*/
+        /*HttpSession session = req.getSession(false);
+        if (session != null) {
+            session.invalidate();
+        }*/
         RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
         dispatcher.forward(req, resp);
         HttpSession session = req.getSession(false);
-        if (session != null) {
-            session.removeAttribute("error");
+        String action = req.getServletPath();
+        System.out.println(action);
+        if(session != null) {
+            if (action == "/logout") {
+                session.invalidate();
+                resp.sendRedirect("");
+            }
+            else {
+                session.removeAttribute("error");
+            }
         }
-
     }
     private void authenticate(HttpServletRequest request, HttpServletResponse response)
             throws Exception {

@@ -26,6 +26,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
             rel="stylesheet"
     />
+    <title>Aslan Team - Todo</title>
 </head>
 <body>
 <section class="vh-100 gradient-custom-2">
@@ -36,7 +37,9 @@
                     <div class="card-header p-3">
                         <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Task List</h5>
                         <span class="item-period">${email}</span>
-                        <span ><a href="/" class="item-small">Logout</a> </span>
+                        <form action="/logout">
+                            <span ><a href="/" class="item-small">Logout</a> </span>
+                        </form>
                     </div>
                     <div class="card-body table-responsive" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
                         <table class="table mb-0 table-todo">
